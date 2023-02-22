@@ -1,0 +1,11 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/CottonPlant",
+    "prod_uri": "mysql+pymysql://root:@localhost/CottonPlant",
+    "user_email":"",
+    "user_pass": ""
+
+  }
+}

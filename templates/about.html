@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+	<!-- full Title -->
+<!--	<div class="full-title">-->
+<!--		<div class="container">-->
+<!--			&lt;!&ndash; Page Heading/Breadcrumbs &ndash;&gt;-->
+<!--			<h1 class="mt-4 mb-3">About-->
+<!--				<small>Subheading</small>-->
+<!--			</h1>-->
+<!--		</div>-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+<!--    &lt;!&ndash; Page Content &ndash;&gt;-->
+<!--    <div class="container">-->
+<!--		<div class="breadcrumb-main">-->
+<!--			<ol class="breadcrumb">-->
+<!--				<li class="breadcrumb-item">-->
+<!--					<a href="index.html">Home</a>-->
+<!--				</li>-->
+<!--				<li class="breadcrumb-item active">About</li>-->
+<!--			</ol>-->
+<!--		</div>-->
+		<!-- About Content -->
+		<div class="about-main">
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="img-fluid rounded mb-4" src="images/about-img.jpg" alt="" />
+				</div>
+				<div class="col-lg-12">
+					<h2>About our Approach</h2>
+					<p>Transfer learning is a machine learning technique that involves using a pre-trained model as a starting point for a new task, rather than training a model from scratch. This can be especially useful when there is a limited amount of data available for the new task, as the pre-trained model will already have learned many of the general features and patterns present in the data.</p>
+					<p>In the context of cotton plant disease prediction, transfer learning could be used to train a deep learning model to classify images of healthy and diseased cotton plants. For example, you could use a pre-trained model such as ResNet or VGG that has been trained on a large dataset of general images, and then fine-tune the model on a smaller dataset of cotton plant images.</p>
+					<p>It is important to note that transfer learning is not a one-size-fits-all solution, and the specific approach you take will depend on the size and complexity of your dataset and the specific requirements of your task</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+
+
+   {% endblock %}

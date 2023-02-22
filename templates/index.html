@@ -1,0 +1,226 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Content -->
+ <header class="slider-main">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <!-- Slide One - Set the background image for this slide in the line below -->
+               <div class="carousel-item active" style="background-image: url('{{url_for('static',filename='images/img3.jpg')}}">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Welcome to Cotton Disease Prediction</h3>
+                     <p>A Great Solution With Transfer Learning</p>
+                  </div>
+               </div>
+               <!-- Slide Two - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('{{url_for('static',filename='images/slider-02.jpg')}}">
+                  <div class="carousel-caption d-none d-md-block">
+
+              <h3>Welcome to Cotton Disease Prediction</h3>
+                     <p>A Great Solution With Transfer Learning</p>
+                  </div>
+               </div>
+               <!-- Slide Three - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('{{url_for('static',filename='images/slider-03.jpg')}}">
+                  <div class="carousel-caption d-none d-md-block">     <h3>Welcome to Cotton Disease Prediction</h3>
+                     <p>A Great Solution With Transfer Learning</p>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="services-bar">
+            <h1 class="my-4">Diseases Model is prediting</h1>
+            <!-- Services Section -->
+            <div class="row">
+               <div class="col-lg-4 mb-4">
+                  <div class="card h-100">
+                     <h4 class="card-header">Fusarium Wilt</h4>
+                     <div class="card-img">
+                        <img class="img-fluid" src="images/services-img-01.jpg" alt="" />
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text">Fusarium wilt is a fungal disease that affects cotton plants. It is caused by the fungus Fusarium oxysporum and is most commonly found in warm, humid climates. Symptoms of Fusarium wilt include yellowing and wilting of the leaves, as well as stunted plant growth</p>
+                     </div>
+                     <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4,curl">
+                  <div class="card h-100">
+                     <h4 class="card-header">Cotton Curl Virus</h4>
+                     <div class="card-img">
+                        <img class="img-fluid" src="images/services-img-02.jpg" alt="" />
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text"> Cotton curl virus (CCV) is a viral disease that affects cotton plants. It is transmitted by whiteflies and causes a range of symptoms including curled, distorted leaves, stunted plant growth, and reduced yields. there is no treatment if the plant is once affected by this virus</p>
+                     </div>
+                     <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <div class="card h-100">
+                     <h4 class="card-header">Bacterial Blight:</h4>
+                     <div class="card-img">
+                        <img class="img-fluid" src="images/services-img-03.jpg" alt="" />
+                     </div>
+                     <div class="card-body">
+                        <p class="card-text"> Bacterial blight is a bacterial disease that affects cotton plants. It is caused by the bacterium Xanthomonas campestris and is most commonly found in warm, humid environments. Symptoms of bacterial blight include the appearance of small, water-soaked lesions on the leaves and stems of the plant, </p>
+                     </div>
+                     <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- About Section -->
+        <div class="about-main">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2>Welcome to Cotton Plant Disease Prediction</h2>
+                  <p>Cotton is a vital crop that is used to produce a wide range of products, including clothing, textiles, and industrial goods. Unfortunately, cotton plants are vulnerable to a number of diseases that can cause significant yield losses and even kill the plants. In this article, we will discuss some effective strategies for saving cotton plants from diseases.
+                  </p>
+                  <h5>Our smart approach</h5>
+                  <ul>
+                     <li>The first step, Collection of large dataset of images of healthy and diseased cotton plants.</li>
+                     <li>The second step, preprocess the data to prepare it for training the and validation of the model. </li>
+                     <li>The third step, selection of the transfer learning model architecture based on the size and complexity of data.</li>
+                     <li>The forth step, fine-tune the model by adjusting its hyperparameters, adding more data, or changing the model architecture. </li>
+                     <li>The fifth step, satisfied with the model's performance, deploy it in a production environment to begin making predictions on new data. /li>
+                  </ul>
+               </div>
+               <div class="col-lg-6">
+                  <img class="img-fluid rounded" src="images/about-img.jpg" alt="" />
+               </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- Portfolio Section -->
+        <div class="portfolio-main">
+            <h2>How To Keep cotton Plants Healthy!</h2>
+            <div class="row">
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-01.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Feild  care</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-02.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Feild renovation</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-03.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Tree planting</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-04.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Water Baganig</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-05.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Growing plants</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="#">
+                           <img class="card-img-top" src="{{url_for('static',filename='images/portfolio-img-01.jpg')}}" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">Snow removal</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <hr>
+        <!-- Get In Touch Now Section -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+               <p>By using disease-resistant varieties, practicing good crop management, using proper irrigation techniques, and applying preventative pesticides, we can help keep your cotton plants healthy and productive.</p>
+            </div>
+            <div class="col-md-4">
+               <a class="btn btn-lg btn-secondary btn-block" href="#">Get In Touch Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!--footer starts from here-->
+{% endblock %}

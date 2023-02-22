@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+		<img class="img-fluid rounded mb-4" src="images/services-big.jpg" alt="" />
+
+		<!-- Services Section -->
+		<div class="services-bar">
+            <h1 class="text-center">Upload an Image and Get the Prediction </h1>
+            <br>
+            <div class="row">
+               <div class="col-lg-6 mb-2">
+                  <div class="card h-100">
+                     <h4 class="card-header">Uplaod an Image</h4>
+                     <div class="card-img">
+                        <img class="img-fluid" src="images/services-img-03.jpg" alt="" />
+                     </div>
+                     <div class="card-body">
+                          <h5>Choose an Image, to Get Prediction.</h5>
+                     </div>
+                     <div class="card-body">
+                        <form action="/predict" method="post" enctype="multipart/form-data" >
+                            <input type="file" name="image" class="upload">
+                            <br>
+                            <br>
+                                <input type="submit" class="btn btn-success" value="predict">
+                        </form>
+                     </div>
+<!--                     <div class="card-footer">-->
+<!--                        <a href="#" class="btn btn-primary">Upload an Image</a>-->
+<!--                     </div>-->
+                  </div>
+               </div>
+               <div class="col-lg-6 mb-2">
+                  <div class="card h-100">
+                     <h4 class="card-header">Predicted Outcome </h4>
+                      <div class="container my-2">
+                          <div class="row mb-4">
+                              <div class="col-sm" style="margin-bottom: 0px;">
+<!--                                  <span class="border border-primary">-->
+                                      <img src="{{ user_image }}" alt="User Image"  width="300" height="300">
+<!--
+</span>-->
+                              <br>
+                              </div>
+                       {% if result %}
+
+                               <h5 class="text-center">{{result}}</h5>
+                       {% endif %}
+                  </div>
+               </div>
+            </div>
+               </div>
+                <hr>
+                <br>
+                <br>
+                   {% endblock %}
