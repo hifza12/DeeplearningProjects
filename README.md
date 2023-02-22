@@ -20,6 +20,7 @@ Transfer learning is used in this project to fine-tune a pre-trained model for c
 The model is trained using a combination of data augmentation and fine-tuning. Data augmentation is used to generate additional training examples by applying random transformations to the input images. Fine-tuning involves training the entire model on the new task, with a low learning rate to avoid overfitting.
 
 ## Results
+
 The trained model achieves an accuracy of 96% on a held-out test set, demonstrating that transfer learning is an effective approach for cotton plant disease prediction.
 
 # Usage
@@ -29,5 +30,7 @@ To use this code, first clone the repository:
 git clone https://github.com/hifza12/cotton-plant-disease-prediction.git
 
 ## Future Work
+<p style="text-align: justify;">
 There are several ways in which this project could be extended. For example, the dataset could be expanded to include more types of diseases or different plant species. Additionally, the performance of the model could be improved by using more advanced techniques such as ensembling or transfer learning from multiple pre-trained models.
+</p>
 
